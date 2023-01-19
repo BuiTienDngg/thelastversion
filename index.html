@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index1.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Pacifico&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script>
+        function display__img1(){
+            let holder = document.getElementById('holder1')
+            let h1 = document.getElementById('holder1')
+            let a = Math.floor(Math.random()*100) + 1;
+            if( a == 1){
+                holder.innerHTML='<img class ="img" src="50K.jfif">'
+                setTimeout(playaudio,700);
+                chucmung();   
+
+            }else if( a <= 50) {
+                holder.innerHTML='<img class ="img" src="20K.jpg">'
+                setTimeout(playaudio,700);
+                chucmung();           
+            }else if ( a <= 100){
+                holder.innerHTML='<img class ="img" src="10K.jpg">'
+                setTimeout(playaudio,700);
+                chucmung();      
+            }
+        }
+        function display__img2(){
+            let holder = document.getElementById('holder2')
+            let h1 = document.getElementById('holder2')
+            let a = Math.floor(Math.random()*100) + 1;
+            if( a == 1){
+                holder.innerHTML='<img class ="img" src="50K.jfif">'
+                setTimeout(playaudio,700);
+                chucmung();   
+
+            }else if( a <= 50) {
+                holder.innerHTML='<img class ="img" src="20K.jpg">'
+                setTimeout(playaudio,700);
+                chucmung();           
+            }else if ( a <= 100){
+                holder.innerHTML='<img class ="img" src="10K.jpg">'
+                setTimeout(playaudio,700);
+                chucmung();      
+            }
+        }
+        function display__chucmung(){
+            let h2 = document.getElementById('demo');
+            h2.innerHTML='<div class="Chucmung"></div>'
+        }
+          function playaudio() {
+              myMusic.play();
+          }
+    </script>
+     
+    
+</head>
+<body>
+    <audio id="myMusic" >
+       <source src="tieng_vo_tay.mp3">
+    </audio>
+
+    <div class="pyro"><div class="before"></div><div class="after"></div></div>
+    <button onclick="display__img1()" class="button1" >
+                <div class="X"></div>
+                <div class="head__lixi1"> Happy New Year</div>
+                <div id ="holder1"></div>                    
+                <div class="lucky_money1"></div>     
+                    <audio autoplay></audio>
+                    <div class="body__lixi1">
+                    </div>
+                    <div class = "XX" >2023 </div> 
+                    <div class="vansunhuy">
+                        <div class="van">Vạn</div>
+                        <div class="su">Sự</div>
+                        <div class="nhu">Như</div>
+                        <div class="y">Ý</div>
+                     </div>
+                    
+       </button>  
+
+     <div class="pyro"><div class="before"></div><div class="after"></digitv></div>
+     <button onclick="display__img2()" class="button2" >
+                 <div class="Y"></div>
+                 <div class="head__lixi2">Happy New Year</div>
+                 <div id ="holder2"></div>                    
+                 <div class="lucky_money2"></div>     
+                     <audio autoplay></audio>
+                     <div class="body__lixi">
+                     </div> 
+                     <div class = "YY" >2023 </div> 
+                     <div class="vansu">
+                         <div class="van">Vạn</div>
+                         <div class="su">Sự</div>
+                         <div class="nhu">Như</div>
+                         <div class="y">Ý</div>
+                      </div>
+        </button>  
+<div class ="help">
+
+</div>
+</body>
+</html>
